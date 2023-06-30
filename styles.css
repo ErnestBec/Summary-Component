@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+:root {
+  /* ### Primary */
+
+  --Light-red: hsla(0, 100%, 67%, 0.7);
+  --Orangey-yellow: hsla(39, 100%, 56%, 0.7);
+  --Green-teal: hsla(166, 100%, 37%, 0.7);
+  --Cobalt-blue: hsla(234, 85%, 45%, 0.7);
+
+  /* ## Gradients */
+  /* ##background) */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+  /* Circle */
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /*## Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsla(241, 100%, 89%, 0.99);
+  --Dark-gray-blue: hsla(224, 30%, 27%);
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-results {
+  padding: 40px;
+  height: 380px;
+  background: linear-gradient(
+    var(--Light-slate-blue) -10%,
+    var(--Light-royal-blue) 100%
+  );
+  border-radius: 0px 0px 10% 10%;
+  justify-content: space-between;
+}
+/* Se esta utilizando un selector de Hijo Directo ya que se encuentra en en el nivel enseguida de la etiqueta con la calse declarada */
+.container-results > h3 {
+  font-weight: 700;
+  color: var(--Light-lavender);
+}
+.container-results > h2 {
+  color: var(--White);
+}
+.container-results > p {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: var(--Light-lavender);
+  text-align: center;
+}
+
+.container-circle {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+  border-radius: 100%;
+}
+/* Se esta utilizando un selector de Hijo Directo ya que se encuentra en en el nivel enseguida de la etiqueta con la calse declarada */
+.container-circle > h2 {
+  color: var(--White);
+  font-size: 48px;
+}
+.container-circle > h4 {
+  color: hsla(241, 100%, 89%, 0.5);
+}
+.container-summary {
+  background-color: var(--White);
+  width: 100%;
+  padding: 20px;
+}
+.container-summary > h3 {
+  color: var(--Dark-gray-blue);
+}
+.container-summary > ul {
+  list-style: none;
+  padding: 0%;
+  margin: 20px 20px 0px 20px;
+}
+
+.container-summary li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 40px 0px;
+}
+.container-summary li > div {
+  display: flex;
+}
+.container-summary li > span {
+  font-weight: 700;
+  color: var(--Light-lavender);
+}
+.container-summary li > span > b {
+  color: var(--Dark-gray-blue);
+  font-weight: 7800;
+}
+.color-red {
+  margin-left: 20px;
+  color: var(--Light-red);
+}
+.color-yellow {
+  margin-left: 20px;
+
+  color: var(--Orangey-yellow);
+}
+
+.color-green {
+  margin-left: 20px;
+
+  color: var(--Green-teal);
+}
+.color-blue {
+  margin-left: 20px;
+  color: var(--Cobalt-blue);
+}
+.container-summary > div {
+  display: flex;
+  justify-content: center;
+}
+input {
+  color: var(--White);
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--Dark-gray-blue);
+  width: 80%;
+  height: 50px;
+  border-radius: 50px;
+  border: 0;
+}
