@@ -27,6 +27,12 @@
   --Dark-gray-blue: hsla(224, 30%, 27%);
 }
 
+.container-main-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .container-flex {
   display: flex;
   flex-direction: column;
@@ -134,4 +140,36 @@ input {
   height: 50px;
   border-radius: 50px;
   border: 0;
+}
+.attribution {
+  margin: 10px;
+}
+/* Responsive  */
+
+@media only screen and (min-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container-main-flex {
+    border-radius: 5%;
+    overflow: hidden;
+    flex-direction: row;
+    margin: auto;
+    max-width: 600px;
+    /* Genera una sombra alrededor del recuadro sus atributos son:*/
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 20px 25px -10px var(--Light-lavender);
+  }
+  .container-results {
+    border-radius: 5%;
+  }
+  input:hover {
+    background: linear-gradient(
+      var(--Light-slate-blue) -5%,
+      var(--Light-royal-blue) 100%
+    );
+  }
 }
